@@ -1,0 +1,13 @@
+[Unit]
+Description=NSL Game Scanner (one-shot)
+After=graphical-session.target
+
+[Service]
+Type=oneshot
+ExecStartPre=/bin/bash -c 'for i in $(seq 1 60); do curl -s http://localhost:8080/json > /dev/null 2>&1 && break; sleep 5; done'
+ExecStart=/usr/bin/python3 /home/deck/.config/systemd/user/NSLGameScanner.py
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=graphical-session.target
