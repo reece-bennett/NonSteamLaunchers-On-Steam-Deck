@@ -1,30 +1,3 @@
-<p align="center"><em>“Who hath ascended up into heaven, or descended? who hath gathered the wind in his fists? who hath bound the waters in a garment? who hath established all the ends of the earth? what is his name, and what is his son's name, if thou canst tell?”</em><br><em>- Proverbs 30:4 (KJV)</em></p>
-
-<p align="center"><em>“For God so loved the world, that he gave his only begotten Son, that whosoever believeth in him should not perish, but have everlasting life.”</em><br><em>“For God sent not his Son into the world to condemn the world; but that the world through him might be saved.”</em><br><em>- John 3:16-17 (KJV)</em></p>
-
-
-
-<p align="center">
-  <img
-    src="https://github-stats-extended.vercel.app/api?username=moraroy&theme=transparent&show_icons=true&hide_border=true&count_private=true"
-    width="48%"
-  />
-  <img
-    src="https://streak-stats.demolab.com?user=moraroy&theme=transparent&hide_border=true"
-    width="48%"
-  />
-  <img
-    src="https://github-stats-extended.vercel.app/api/top-langs/?username=moraroy&theme=transparent&hide_border=true&layout=compact"
-    width="48%"
-  />
-</p>
-
-
-
-<p align="center">
-  <img src="https://github.com/cchrkk/NSLOSD-DL/raw/main/logo.svg" width=40% height=auto
-</p>
-
 <h1 align="center">
 NonSteamLaunchers 🚀
 </h1>
@@ -40,11 +13,11 @@ Features  ✅
 
 - Automatic installation of the most popular launchers for your Steam Deck and Steam Machine on SteamOS 🎮
 
-- Handle automatically the download and installation of your chosen launchers and the games, artwork included! ⌚️ 
+- Handle automatically the download and installation of your chosen launchers and the games, artwork included! ⌚️
 
 - MicroSD Support 💾 This script supports moving the entire prefix to a microSD. The script will install launchers and games to your SD card, and the launchers in Steam will point to the SD card installation. This allows you to save internal storage space on your Steam Deck!
 
-- ProtonTricks is compatible with NonSteamLaunchers default installation (one prefix). This will add a NonSteamLaunchers shorcut in your library...this shortcut doesnt do anything. All you have to do is simply "Hide this Game" in your Library. Right click its properties and choose "Manage" and "Hide this Game". You never have to worry about it again! If you were to open up ProtonTricks to fix any game or launcher it is now accessible! 
+- ProtonTricks is compatible with NonSteamLaunchers default installation (one prefix). This will add a NonSteamLaunchers shorcut in your library...this shortcut doesnt do anything. All you have to do is simply "Hide this Game" in your Library. Right click its properties and choose "Manage" and "Hide this Game". You never have to worry about it again! If you were to open up ProtonTricks to fix any game or launcher it is now accessible!
 
 - In case you didnt know, you can also choose to check mark "Separate App Id's" when installing a launcher, this will install all launchers in each of their own prefix. Automatically working with ProtonTricks!
 
@@ -195,14 +168,14 @@ The NSL script can be called from online via bash, heres an example of it instal
 - All launchers can be installed by calling their name like this  ```"Epic Games"``` ```"Ubisoft Connect"``` etc.
 - All launchers can be uninstalled by calling their name like this ```"Uninstall Epic Games"``` ```"Uninstall Ubisoft Connect"``` etc.
 - Here is the list of commands that can also be called
-  
+
 - ```"Start Fresh"``` ```"Update Proton-GE"``` ```"Stop NSLGameScanner"``` ```"Move to SD Card"```
 
 - The "Move to SD Card" function can only be called in this format
-  
+
 ```/bin/bash -c 'curl -Ls https://raw.githubusercontent.com/moraroy/NonSteamLaunchers-On-Steam-Deck/main/NonSteamLaunchers.sh | nohup /bin/bash -s -- "Move to SD Card" "EpicGamesLauncher"'```
 
-- The format of "EpicGamesLauncher" comes from the user choosing to either "Separate App ID's" or use the default installation prefix "NonSteamLaunchers" in the compatdata folder. This would be named differently for each launcher. Otherwise the command line would then only be 
+- The format of "EpicGamesLauncher" comes from the user choosing to either "Separate App ID's" or use the default installation prefix "NonSteamLaunchers" in the compatdata folder. This would be named differently for each launcher. Otherwise the command line would then only be
 
 ```/bin/bash -c 'curl -Ls https://raw.githubusercontent.com/moraroy/NonSteamLaunchers-On-Steam-Deck/main/NonSteamLaunchers.sh | nohup /bin/bash -s -- "Move to SD Card" "NonSteamLaunchers"'```
 
@@ -287,12 +260,12 @@ Supported Streaming Sites for games and as well as any website. 🌐
 
 <h1 align="left">
 Finds Games Automatically
-</h1> 
+</h1>
 
 "NSLGameScanner.service" is also live when you use this script and continues after the script is closed and even works after your Steam Deck has restarted. This works in the background as a service file to automatically add your games to your library on every Steam restart. Currently adds:
 - Epic Games 🎮          💾 Full SD Card Support
 - Ubisoft Connect 🎮     💾 Full SD Card Support
-- EA App 🎮              💾 Full SD Card Support not sure 
+- EA App 🎮              💾 Full SD Card Support not sure
 - Gog Galaxy 🎮          💾 Full SD Card Support
 - Battle.net 🎮
 - Amazon Games 🎮        💾 Full SD Card Support
@@ -335,7 +308,7 @@ You can donate to me on [ko-fi](https://ko-fi.com/moraroy), [liberapay](https://
 
 ### Dev Container
 
-Install [Docker](https://docs.docker.com/compose/install/). Once installed, a clean dev environment with a Docker container [native to VSCode](https://code.visualstudio.com/docs/devcontainers/create-dev-container#_dockerfile) is spun up automatically. 
+Install [Docker](https://docs.docker.com/compose/install/). Once installed, a clean dev environment with a Docker container [native to VSCode](https://code.visualstudio.com/docs/devcontainers/create-dev-container#_dockerfile) is spun up automatically.
 
 * [Command palette](https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette) (⇧⌘P) > Dev Containers: Reopen in Container
 * F5 for debug
@@ -387,12 +360,12 @@ python -m venv .venv
 source .venv/bin/activate
 
 # install dependencies
-python -m pip install -r requirements.txt 
+python -m pip install -r requirements.txt
 ```
 
 ### Pre-commit hooks
 
-Pre-commit hooks are installed via `pre-commit` and are run automatically on `git commit`. 
+Pre-commit hooks are installed via `pre-commit` and are run automatically on `git commit`.
 
 Most importantly, `ruff` is used to lint all python code.
 
@@ -416,7 +389,7 @@ Most importantly, `ruff` is used to lint all python code.
 
 While not currently enforced, by using [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/#summary), it's possible to automatically generate changelogs and version numbers via [release-please](https://github.com/googleapis/release-please).
 
-To help with that, the [commitizen](https://commitizen-tools.github.io/commitizen/) tool can be installed. 
+To help with that, the [commitizen](https://commitizen-tools.github.io/commitizen/) tool can be installed.
 
 To reduce some of the non-essential tooling, it's been removed from the repo, but feel free to install globally without checking into source control.
 
