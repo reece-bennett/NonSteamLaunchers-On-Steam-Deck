@@ -4804,12 +4804,12 @@ if new_shortcuts_added or shortcuts_updated:
     if created_shortcuts:
         print("Created Shortcuts:")
 
-        for name in created_shortcuts:
-            print(name)
+        # for name in created_shortcuts:
+        #     print(name)
 
-            if name.lower() not in [app.lower() for app in skip_games]:
-                print(f"Fetching boot video for: {name}")
-                get_boot_video(name, logged_in_home)
+        #     if name.lower() not in [app.lower() for app in skip_games]:
+        #         print(f"Fetching boot video for: {name}")
+        #         get_boot_video(name, logged_in_home)
 
         for name in created_shortcuts:
             if name in notified_games:
