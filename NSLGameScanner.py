@@ -1044,8 +1044,8 @@ def create_exec_line_from_entry(logged_in_home, new_entry, m_gameid):
             if os.path.exists(original_desktop_path):
                 os.remove(original_desktop_path)
 
-            os.symlink(app_file_path, original_desktop_path)
-            print(f"Created symlink {original_desktop_path} -> {app_file_path}")
+            # os.symlink(app_file_path, original_desktop_path)
+            # print(f"Created symlink {original_desktop_path} -> {app_file_path}")
 
 
         print("No matching .desktop file")
